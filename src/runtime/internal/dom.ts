@@ -310,7 +310,7 @@ export function add_resize_listener(node: HTMLElement, fn: () => void) {
 	iframe.setAttribute('aria-hidden', 'true');
 	iframe.tabIndex = -1;
 
-	const crossorigin = is_crossorigin();
+	is_crossorigin();
 
 	let unsubscribe: () => void;
 
